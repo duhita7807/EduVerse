@@ -1,0 +1,210 @@
+{
+  "date": "2026-11-02T16:58:58.058Z",
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz",
+    "threads": 8,
+    "ramGB": 8,
+    "os": "win32"
+  },
+  "setup": {
+    "server": "one Node.js process, NODE_ENV=production",
+    "database": "local MongoDB, temporary copy",
+    "students": 1000,
+    "generator": "same machine as the server",
+    "thinkTime": "1-3 s",
+    "mix": [
+      [
+        "/auth/me",
+        20
+      ],
+      [
+        "/profile",
+        20
+      ],
+      [
+        "/analytics/readiness",
+        30
+      ],
+      [
+        "/placement/drives",
+        20
+      ],
+      [
+        "/placement/summary",
+        10
+      ]
+    ],
+    "stepSeconds": 60,
+    "soakSeconds": 300,
+    "capacityRule": "p95 < 1000 ms and errors < 1%"
+  },
+  "baseline": {
+    "/auth/me": {
+      "requests": 50,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 62.6,
+      "meanMs": 16,
+      "p50Ms": 15.8,
+      "p95Ms": 23.1,
+      "p99Ms": 50.3,
+      "maxMs": 50.3
+    },
+    "/profile": {
+      "requests": 50,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 66.1,
+      "meanMs": 15.1,
+      "p50Ms": 15.7,
+      "p95Ms": 20.8,
+      "p99Ms": 29,
+      "maxMs": 29
+    },
+    "/analytics/readiness": {
+      "requests": 50,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 50.1,
+      "meanMs": 20,
+      "p50Ms": 17.6,
+      "p95Ms": 33.5,
+      "p99Ms": 44.6,
+      "maxMs": 44.6
+    },
+    "/placement/drives": {
+      "requests": 50,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 58.4,
+      "meanMs": 17.1,
+      "p50Ms": 16,
+      "p95Ms": 28.1,
+      "p99Ms": 61.4,
+      "maxMs": 61.4
+    },
+    "/placement/summary": {
+      "requests": 50,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 69.5,
+      "meanMs": 14.4,
+      "p50Ms": 15,
+      "p95Ms": 21.6,
+      "p99Ms": 22.2,
+      "maxMs": 22.2
+    },
+    "/auth/login": {
+      "requests": 20,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 9.4,
+      "meanMs": 105.9,
+      "p50Ms": 103.9,
+      "p95Ms": 198.3,
+      "p99Ms": 198.3,
+      "maxMs": 198.3
+    }
+  },
+  "steps": [
+    {
+      "users": 50,
+      "requests": 1480,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 24.7,
+      "meanMs": 22.7,
+      "p50Ms": 23.2,
+      "p95Ms": 35.3,
+      "p99Ms": 58.8,
+      "maxMs": 92.6,
+      "errorTypes": {}
+    },
+    {
+      "users": 100,
+      "requests": 2946,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 49.1,
+      "meanMs": 26.4,
+      "p50Ms": 23.7,
+      "p95Ms": 48.1,
+      "p99Ms": 138,
+      "maxMs": 251.7,
+      "errorTypes": {}
+    },
+    {
+      "users": 200,
+      "requests": 5772,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 96.2,
+      "meanMs": 85.7,
+      "p50Ms": 24.4,
+      "p95Ms": 412.2,
+      "p99Ms": 1146.8,
+      "maxMs": 2243.3,
+      "errorTypes": {}
+    },
+    {
+      "users": 400,
+      "requests": 11692,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 194.9,
+      "meanMs": 54.2,
+      "p50Ms": 28.4,
+      "p95Ms": 250.1,
+      "p99Ms": 461,
+      "maxMs": 988.8,
+      "errorTypes": {}
+    },
+    {
+      "users": 800,
+      "requests": 14235,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 237.3,
+      "meanMs": 1400.4,
+      "p50Ms": 1420,
+      "p95Ms": 2017.8,
+      "p99Ms": 2309.9,
+      "maxMs": 3253.7,
+      "errorTypes": {}
+    }
+  ],
+  "capacityUsers": 400,
+  "reachedLimit": true,
+  "soak": {
+    "users": 400,
+    "requests": 48784,
+    "errors": 15,
+    "errorRate": 0.03,
+    "requestsPerSecond": 162.6,
+    "meanMs": 462.5,
+    "p50Ms": 47.7,
+    "p95Ms": 2640.3,
+    "p99Ms": 5257.5,
+    "maxMs": 11795.8,
+    "errorTypes": {
+      "TypeError": 15
+    },
+    "passed": false
+  },
+  "lowerSoaks": [
+    {
+      "users": 200,
+      "requests": 29555,
+      "errors": 0,
+      "errorRate": 0,
+      "requestsPerSecond": 98.5,
+      "meanMs": 29.3,
+      "p50Ms": 20.4,
+      "p95Ms": 56.6,
+      "p99Ms": 313.5,
+      "maxMs": 1117.5,
+      "errorTypes": {},
+      "passed": true
+    }
+  ]
+}

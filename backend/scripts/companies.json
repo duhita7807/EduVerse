@@ -1,0 +1,59 @@
+[
+  {
+    "recruiter": { "name": "Priya Deshmukh", "email": "priya.deshmukh@novacode.example.com" },
+    "company": { "name": "NovaCode Technologies", "website": "https://novacode.example.com", "industry": "IT Services", "about": "Product engineering and cloud services for mid-size enterprises." },
+    "drives": [
+      { "title": "Software Engineer", "jobType": "full-time", "location": "Pune", "ctc": "6.5 LPA", "openings": 15, "description": "Backend and full-stack roles on cloud products.", "eligibility": { "minCgpa": 7, "branches": ["CSE", "Computer Science"], "years": ["4th Year"] }, "applicationDeadline": "2026-12-15" },
+      { "title": "Data Analyst Intern", "jobType": "internship", "location": "Remote", "ctc": "20k/month", "openings": 5, "description": "Six-month analytics internship.", "eligibility": { "minCgpa": 6.5, "branches": ["Data Science", "CSE"], "years": ["3rd Year", "4th Year"] }, "applicationDeadline": "2026-12-20" }
+    ]
+  },
+  {
+    "recruiter": { "name": "Rahul Kulkarni", "email": "rahul.kulkarni@cognivia.example.com" },
+    "company": { "name": "Cognivia AI Labs", "website": "https://cognivia.example.com", "industry": "Artificial Intelligence", "about": "Applied machine learning for healthcare and retail." },
+    "drives": [
+      { "title": "ML Engineer", "jobType": "full-time", "location": "Bengaluru", "ctc": "9 LPA", "openings": 6, "description": "Build and deploy ML models.", "eligibility": { "minCgpa": 8, "branches": ["Artificial Intelligence", "Data Science", "Computer Science"], "years": ["4th Year"] }, "applicationDeadline": "2027-01-10" }
+    ]
+  },
+  {
+    "recruiter": { "name": "Sneha Patil", "email": "sneha.patil@kraftmech.example.com" },
+    "company": { "name": "KraftMech Industries", "website": "https://kraftmech.example.com", "industry": "Manufacturing", "about": "Precision components for automotive OEMs." },
+    "drives": [
+      { "title": "Graduate Engineer Trainee - Mechanical", "jobType": "full-time", "location": "Kolhapur", "ctc": "4.2 LPA", "openings": 12, "description": "Production and quality engineering.", "eligibility": { "minCgpa": 6.5, "branches": ["Mechanical"], "years": ["4th Year"] }, "applicationDeadline": "2026-12-05" }
+    ]
+  },
+  {
+    "recruiter": { "name": "Amit Jadhav", "email": "amit.jadhav@buildright.example.com" },
+    "company": { "name": "BuildRight Infra", "website": "https://buildright.example.com", "industry": "Construction", "about": "Infrastructure and urban development projects across Maharashtra." },
+    "drives": [
+      { "title": "Site Engineer", "jobType": "full-time", "location": "Mumbai", "ctc": "4.5 LPA", "openings": 8, "description": "On-site civil execution and supervision.", "eligibility": { "minCgpa": 6, "branches": ["Civil"], "years": ["4th Year"] }, "applicationDeadline": "2026-12-12" }
+    ]
+  },
+  {
+    "recruiter": { "name": "Neha Shinde", "email": "neha.shinde@chemora.example.com" },
+    "company": { "name": "Chemora Process Solutions", "website": "https://chemora.example.com", "industry": "Chemicals", "about": "Specialty chemicals and process plant operations." },
+    "drives": [
+      { "title": "Process Engineer Trainee", "jobType": "full-time", "location": "Ankleshwar", "ctc": "4.8 LPA", "openings": 6, "description": "Plant operations and process optimisation.", "eligibility": { "minCgpa": 6.5, "branches": ["Chemical"], "years": ["4th Year"] }, "applicationDeadline": "2026-12-18" }
+    ]
+  },
+  {
+    "recruiter": { "name": "Vikram Pawar", "email": "vikram.pawar@signalwave.example.com" },
+    "company": { "name": "SignalWave Communications", "website": "https://signalwave.example.com", "industry": "Telecom", "about": "Network equipment and embedded systems." },
+    "drives": [
+      { "title": "Embedded Systems Engineer", "jobType": "full-time", "location": "Hyderabad", "ctc": "5.5 LPA", "openings": 7, "description": "Firmware and hardware validation.", "eligibility": { "minCgpa": 7, "branches": ["Electronics"], "years": ["4th Year"] }, "applicationDeadline": "2027-01-05" }
+    ]
+  },
+  {
+    "recruiter": { "name": "Kavya Joshi", "email": "kavya.joshi@finedge.example.com" },
+    "company": { "name": "FinEdge Analytics", "website": "https://finedge.example.com", "industry": "FinTech", "about": "Risk analytics and payments software for banks." },
+    "drives": [
+      { "title": "Associate Software Developer", "jobType": "internship-ppo", "location": "Pune", "ctc": "25k/month + PPO 7 LPA", "openings": 10, "description": "Internship with pre-placement offer.", "eligibility": { "minCgpa": 7.5, "branches": [], "years": ["4th Year"] }, "applicationDeadline": "2026-12-28" }
+    ]
+  },
+  {
+    "recruiter": { "name": "Rohan More", "email": "rohan.more@brightpath.example.com" },
+    "company": { "name": "BrightPath Consulting", "website": "https://brightpath.example.com", "industry": "Consulting", "about": "Business and technology consulting." },
+    "drives": [
+      { "title": "Business Analyst", "jobType": "full-time", "location": "Mumbai", "ctc": "6 LPA", "openings": 10, "description": "Open to all branches.", "eligibility": { "minCgpa": 6, "branches": [], "years": ["4th Year"] }, "applicationDeadline": "2027-01-15" }
+    ]
+  }
+]

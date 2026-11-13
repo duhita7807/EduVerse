@@ -1,0 +1,118 @@
+{
+  "groundTruth": "constructed; not validated by experts or students",
+  "roles": 30,
+  "trialsPerRole": 200,
+  "scenarios": [
+    {
+      "name": "Only the role's own skills",
+      "decisions": 39800,
+      "tp": 19616,
+      "fp": 0,
+      "fn": 67,
+      "tn": 20117,
+      "precision": 1,
+      "recall": 0.9966,
+      "f1": 0.9983,
+      "topMissedGaps": [
+        [
+          "\"Git\" counted towards \"GitHub\"",
+          37
+        ],
+        [
+          "\"GitHub\" counted towards \"Git\"",
+          30
+        ]
+      ]
+    },
+    {
+      "name": "Plus skills required by other roles",
+      "decisions": 39800,
+      "tp": 19671,
+      "fp": 0,
+      "fn": 204,
+      "tn": 19925,
+      "precision": 1,
+      "recall": 0.9897,
+      "f1": 0.9948,
+      "topMissedGaps": [
+        [
+          "\"GitHub\" counted towards \"Git\"",
+          74
+        ],
+        [
+          "\"Git\" counted towards \"GitHub\"",
+          32
+        ],
+        [
+          "\"Digital Design\" counted towards \"Git\"",
+          30
+        ],
+        [
+          "\"AutoCAD Electrical\" counted towards \"AutoCAD\"",
+          29
+        ],
+        [
+          "\"Java\" counted towards \"JavaScript\"",
+          19
+        ],
+        [
+          "\"JavaScript\" counted towards \"Java\"",
+          6
+        ],
+        [
+          "\"SolidWorks Simulation\" counted towards \"SolidWorks\"",
+          5
+        ],
+        [
+          "\"SolidWorks\" counted towards \"SolidWorks Simulation\"",
+          3
+        ]
+      ]
+    },
+    {
+      "name": "Plus common skills from imported student records",
+      "decisions": 39800,
+      "tp": 18809,
+      "fp": 0,
+      "fn": 849,
+      "tn": 20142,
+      "precision": 1,
+      "recall": 0.9568,
+      "f1": 0.9779,
+      "topMissedGaps": [
+        [
+          "\"GitHub\" counted towards \"Git\"",
+          40
+        ],
+        [
+          "\"Git\" counted towards \"GitHub\"",
+          34
+        ],
+        [
+          "\"Git & GitHub\" counted towards \"Git\"",
+          25
+        ],
+        [
+          "\"C\" counted towards \"AutoCAD\"",
+          22
+        ],
+        [
+          "\"PostgreSQL\" counted towards \"SQL\"",
+          19
+        ],
+        [
+          "\"REST APIs\" counted towards \"REST API\"",
+          17
+        ],
+        [
+          "\"REST API Development\" counted towards \"REST API\"",
+          16
+        ],
+        [
+          "\"Github\" counted towards \"Git\"",
+          15
+        ]
+      ]
+    }
+  ]
+}

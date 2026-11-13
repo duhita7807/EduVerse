@@ -1,0 +1,50 @@
+{
+  "target": "rule-based readiness score (no real placement outcomes available)",
+  "rows": {
+    "train": 799,
+    "test": 200
+  },
+  "randomForest": {
+    "maePoints": 1.42,
+    "r2": 0.972,
+    "categoryAgreement": 0.93
+  },
+  "xgboost": {
+    "maePoints": 0.62,
+    "r2": 0.995,
+    "categoryAgreement": 0.955
+  },
+  "ensemble": {
+    "maePoints": 0.88,
+    "r2": 0.989,
+    "categoryAgreement": 0.955
+  },
+  "importance": {
+    "randomForest": {
+      "skillCount": 0.629,
+      "profileCompletion": 0.212,
+      "certificationCount": 0.044,
+      "projectCount": 0.033,
+      "hasLinkedin": 0.033,
+      "hasGithub": 0.022,
+      "internshipCount": 0.015,
+      "cgpa": 0.007,
+      "projectTechCount": 0.007,
+      "publicRepos": 0.0,
+      "totalStars": 0.0
+    },
+    "xgboost": {
+      "skillCount": 0.28600001335144043,
+      "hasLinkedin": 0.19599999487400055,
+      "profileCompletion": 0.19200000166893005,
+      "hasGithub": 0.10999999940395355,
+      "projectTechCount": 0.06499999761581421,
+      "projectCount": 0.057999998331069946,
+      "certificationCount": 0.05299999937415123,
+      "internshipCount": 0.035999998450279236,
+      "publicRepos": 0.0020000000949949026,
+      "cgpa": 0.0010000000474974513,
+      "totalStars": 0.0
+    }
+  }
+}

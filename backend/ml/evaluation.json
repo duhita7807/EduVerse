@@ -1,0 +1,215 @@
+{
+  "dataset": {
+    "file": "ml/dataset.csv",
+    "rows": 999,
+    "features": [
+      "cgpa",
+      "skillCount",
+      "projectCount",
+      "projectTechCount",
+      "internshipCount",
+      "certificationCount",
+      "hasGithub",
+      "hasLinkedin",
+      "publicRepos",
+      "totalStars",
+      "profileCompletion"
+    ],
+    "target": "readinessScore",
+    "missingValues": 0,
+    "duplicateFeatureRows": 0,
+    "testRowsAlsoInTrain": 0,
+    "featureRowsWithConflictingTargets": 0,
+    "targetMean": 41.26,
+    "targetStd": 13.53,
+    "targetMin": 1.0,
+    "targetMax": 85.0,
+    "categoryCounts": {
+      "Beginner": 199,
+      "Needs Improvement": 585,
+      "Developing": 177,
+      "Placement Ready": 38,
+      "Highly Placement Ready": 0
+    },
+    "testCategoryCounts": {
+      "Beginner": 39,
+      "Needs Improvement": 125,
+      "Developing": 29,
+      "Placement Ready": 7,
+      "Highly Placement Ready": 0
+    }
+  },
+  "split": {
+    "train": 799,
+    "test": 200,
+    "randomState": 42
+  },
+  "holdout": {
+    "randomForest": {
+      "MAE": 1.42,
+      "MSE": 4.725,
+      "RMSE": 2.174,
+      "R2": 0.9716,
+      "categoryAccuracy": 0.93,
+      "categoryMacroF1": 0.9117
+    },
+    "xgboost": {
+      "MAE": 0.616,
+      "MSE": 0.86,
+      "RMSE": 0.927,
+      "R2": 0.9948,
+      "categoryAccuracy": 0.955,
+      "categoryMacroF1": 0.9357
+    },
+    "ensemble": {
+      "MAE": 0.88,
+      "MSE": 1.874,
+      "RMSE": 1.369,
+      "R2": 0.9887,
+      "categoryAccuracy": 0.955,
+      "categoryMacroF1": 0.9356
+    },
+    "baselineMean": {
+      "MAE": 9.904,
+      "MSE": 167.261,
+      "RMSE": 12.933,
+      "R2": -0.0048,
+      "categoryAccuracy": 0.625,
+      "categoryMacroF1": 0.1923
+    },
+    "baselineLinear": {
+      "MAE": 3.555,
+      "MSE": 28.697,
+      "RMSE": 5.357,
+      "R2": 0.8276,
+      "categoryAccuracy": 0.82,
+      "categoryMacroF1": 0.5363
+    }
+  },
+  "train": {
+    "randomForest": {
+      "MAE": 0.946,
+      "MSE": 2.077,
+      "RMSE": 1.441,
+      "R2": 0.9889,
+      "categoryAccuracy": 0.9587,
+      "categoryMacroF1": 0.9477
+    },
+    "xgboost": {
+      "MAE": 0.296,
+      "MSE": 0.151,
+      "RMSE": 0.388,
+      "R2": 0.9992,
+      "categoryAccuracy": 0.99,
+      "categoryMacroF1": 0.9913
+    }
+  },
+  "fiveFoldCV": {
+    "randomForest": {
+      "MAE": {
+        "mean": 1.6866,
+        "std": 0.1777
+      },
+      "MSE": {
+        "mean": 6.9988,
+        "std": 1.5265
+      },
+      "RMSE": {
+        "mean": 2.6286,
+        "std": 0.2998
+      },
+      "R2": {
+        "mean": 0.9615,
+        "std": 0.009
+      },
+      "categoryAccuracy": {
+        "mean": 0.9249,
+        "std": 0.0104
+      },
+      "categoryMacroF1": {
+        "mean": 0.9025,
+        "std": 0.0157
+      }
+    },
+    "xgboost": {
+      "MAE": {
+        "mean": 0.713,
+        "std": 0.0721
+      },
+      "MSE": {
+        "mean": 1.42,
+        "std": 0.4324
+      },
+      "RMSE": {
+        "mean": 1.1768,
+        "std": 0.1885
+      },
+      "R2": {
+        "mean": 0.9922,
+        "std": 0.0023
+      },
+      "categoryAccuracy": {
+        "mean": 0.972,
+        "std": 0.0112
+      },
+      "categoryMacroF1": {
+        "mean": 0.9558,
+        "std": 0.0241
+      }
+    }
+  },
+  "fiveFoldGroupedCV_noDuplicateLeakage": {
+    "randomForest": {
+      "MAE": {
+        "mean": 1.7514,
+        "std": 0.185
+      },
+      "MSE": {
+        "mean": 7.6402,
+        "std": 2.4234
+      },
+      "RMSE": {
+        "mean": 2.7306,
+        "std": 0.4297
+      },
+      "R2": {
+        "mean": 0.9585,
+        "std": 0.0076
+      },
+      "categoryAccuracy": {
+        "mean": 0.9159,
+        "std": 0.031
+      },
+      "categoryMacroF1": {
+        "mean": 0.8842,
+        "std": 0.0451
+      }
+    },
+    "xgboost": {
+      "MAE": {
+        "mean": 0.7602,
+        "std": 0.1213
+      },
+      "MSE": {
+        "mean": 1.6692,
+        "std": 0.9534
+      },
+      "RMSE": {
+        "mean": 1.2474,
+        "std": 0.3366
+      },
+      "R2": {
+        "mean": 0.9912,
+        "std": 0.0034
+      },
+      "categoryAccuracy": {
+        "mean": 0.974,
+        "std": 0.0168
+      },
+      "categoryMacroF1": {
+        "mean": 0.9591,
+        "std": 0.0212
+      }
+    }
+  }
+}
