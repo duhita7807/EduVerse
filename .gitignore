@@ -1,2 +1,4 @@
 .claude/
 backend/scripts/students.json
+node_modules
+.env
